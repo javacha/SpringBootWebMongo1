@@ -6,7 +6,7 @@
 	<groupId>com.javacha.tests</groupId>
 	<artifactId>SpringBootWebMongo1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>SpringBootWebMongo1</name>
 	<description>Demo project for Spring Boot</description>
