@@ -1,4 +1,4 @@
-package com.javacha.tests.beans;
+package com.javacha.tests.SpringBootWebMongo1.beans;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

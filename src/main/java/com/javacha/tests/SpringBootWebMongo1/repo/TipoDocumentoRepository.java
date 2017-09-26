@@ -1,10 +1,8 @@
-package com.javacha.tests.repo;
-
-import java.util.List;
+package com.javacha.tests.SpringBootWebMongo1.repo;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.javacha.tests.beans.TipoDocumento;
+import com.javacha.tests.SpringBootWebMongo1.beans.TipoDocumento;
 
 
 public interface  TipoDocumentoRepository extends MongoRepository<TipoDocumento, String> {
