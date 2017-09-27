@@ -15,9 +15,8 @@ public class SwaggerConfig {
     @Bean
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .select().apis(RequestHandlerSelectors.basePackage("com.javacha.tests.SpringBootWebMongo1.controllers"))
-                .paths(PathSelectors.ant("/util/*"))
+                .select().apis(RequestHandlerSelectors.basePackage("com.javacha.tests.SpringBootWebMongo1.controllers"))                
                 .build();
-             
+             // .paths(PathSelectors.ant("/*"))
     }
 }
