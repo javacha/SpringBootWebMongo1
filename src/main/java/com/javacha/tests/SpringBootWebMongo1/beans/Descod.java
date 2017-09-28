@@ -9,19 +9,33 @@ public class Descod {
 	@Id
 	private String id;
 	
-	private Double tabla;
-	private Double codigo;
+	private int tabla;
+	private int codigo;
 	private String descripcion;
-	
-	
-	public Descod(Double tabla, Double codigo, String descripcion) {
-		super();
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public int getTabla() {
+		return tabla;
+	}
+	public void setTabla(int tabla) {
 		this.tabla = tabla;
+	}
+	public int getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
+	}
+	public String getDescripcion() {
+		return descripcion;
+	}
+	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-
-
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -36,47 +50,12 @@ public class Descod {
 		builder.append("]");
 		return builder.toString();
 	}
-
-
-	public String getId() {
-		return id;
-	}
-
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-
-	public Double getTabla() {
-		return tabla;
-	}
-
-
-	public void setTabla(Double tabla) {
+	public Descod(int tabla, int codigo, String descripcion) {
+		super();
 		this.tabla = tabla;
-	}
-
-
-	public Double getCodigo() {
-		return codigo;
-	}
-
-
-	public void setCodigo(Double codigo) {
 		this.codigo = codigo;
-	}
-
-
-	public String getDescripcion() {
-		return descripcion;
-	}
-
-
-	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
 	
 	
 		
