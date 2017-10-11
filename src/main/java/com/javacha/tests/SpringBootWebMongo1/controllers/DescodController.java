@@ -22,16 +22,33 @@ public class DescodController {
 	@Autowired
 	DescodRepository descodRepository;	
 	
+	/**
+	 * Lista descod por nro de tabla
+	 * @param tabla
+	 * @return
+	 */
     @RequestMapping(value = "/{tabla}",  method = RequestMethod.GET)
     public List<Descod> listDescodByTabla(@PathVariable int tabla) {
         return descodRepository.findAllByTabla(tabla); 
     }	
 	
-    
+    /**
+     * Obtiene codigo puntual de una tabla
+     * @param tabla
+     * @param codigo
+     * @return
+     */
+    /*
     @RequestMapping(value = "/{tabla}/{codigo}",  method = RequestMethod.GET)
     public Descod getDescodByTablaCodigo(@PathVariable int tabla, @PathVariable int codigo) {
         return descodRepository.findByTablaAndCodigo(tabla, codigo); 
     }	
-	 
+	 */
     
+ 
+    @RequestMapping(value = "/{tabla}/{desc}",  method = RequestMethod.GET)
+    public List<Descod> listDescodByTablaDescripcion(@PathVariable int tabla, @PathVariable String desc) {
+        return descodRepository.findByTablaAndDescripcion(tabla, desc);
+    }	
+	     
 }
