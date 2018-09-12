@@ -1,7 +1,7 @@
 # SpringBootWebMongo1
 
 App de prueba para mostrar como levantar una base mongoDB y publicar serv. Rest que la accede.
-
+La base Mongo está hosteada en mlab.com  
 
 URLs disponibles:
 
@@ -11,3 +11,4 @@ URLs disponibles:
 
 Documentación Swagger
    [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+
